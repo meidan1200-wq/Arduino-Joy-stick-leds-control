@@ -3,7 +3,9 @@
 An interactive Arduino project where a **joystick controls six LEDs** — each LED lights up depending on which **direction the joystick is moved** 🎮💡
 
 You can move the joystick **upwards, backwards, and diagonally (corners)** — and each direction activates a specific LED.  
-Perfect for learning **analog input control** and **multi-output signaling** with Arduino.
+
+This version also includes **push‑button functionality**:\
+➡️ **Pressing the joystick button lights up *all* six LEDs at once.**
 
 ---
 
@@ -39,7 +41,7 @@ When the joystick is centered, **all LEDs are off**.
 - Each LED connects to a digital output pin (e.g., pins **2–7**).  
 - Use resistors in series with LEDs to limit current.
 
-📷 *Add a wiring diagram or photo of your setup here*
+![Circuit Diagram](https://github.com/meidan1200-wq/Arduino-Joy-stick-leds-control/blob/main/ref_circuit/circuit.png?raw=true) 
 
 💡 **Tip:** Ensure all GND connections (joystick and LEDs) share a common ground with the Arduino.
 
@@ -68,7 +70,8 @@ When the joystick is centered, **all LEDs are off**.
 Move the joystick to see different LED responses:
 - ⬆️ → Forward LED lights up  
 - ⬇️ → Backward LED lights up  
-- ↗️ / ↖️ / ↘️ / ↙️ → Corner LEDs light up  
+- ↗️ / ↖️ / ↘️ / ↙️ → Corner LEDs light up
+-   🔘 Button Press → **All LEDs ON**\  
 - 🔘 Center → All LEDs off  
 
 Try smooth diagonal movements for combined LED effects 🔄
